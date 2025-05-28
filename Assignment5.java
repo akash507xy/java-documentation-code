@@ -1,11 +1,15 @@
-/*
- * valid voter program using if,else 
- * step 1: ask for a person age
- * step 2: if age is equal or more than 18 than print valid voter
- * step 3: else print invalid voter
- */
-public class Assignment5 {
-  public static void main(String[] args) {
-    
-  }
+import java.util.Scanner;
+public class Assainmentdemo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your age:");
+        int n = sc.nextInt();
+        int age = n;
+        if(n>=18){
+            System.out.println("You are valid:"+age);
+        }
+        else{
+            System.out.println("You are not valid:");
+        }
+    }
 }
