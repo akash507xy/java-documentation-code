@@ -1,10 +1,20 @@
-// Logical or assignment
-// step 1: Print "Do you love java? "
-// step 2: take user input y / Y / n / N
-// step 3: if user input y / Y then print you are a java lover
-// step 4: if user input n / N then print you are not a java lover
-public class Assignment7 {
-  public static void main(String[] args) {
-    
-  }
+import java.util.Scanner;
+
+ class AssignmentDemo9 {
+    public static void main(String[] args) {
+        char ch;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Do you love java?");
+        ch = sc.next().charAt(0);
+
+        if (ch == 'Y' || ch == 'y') {
+            System.out.println("You love Java!");
+        } else if (ch == 'N' || ch == 'n') {
+            System.out.println("You do not love Java!");
+        } else {
+            System.out.println("Invalid input. Please enter Y/y or N/n.");
+        }
+
+        sc.close();
+    }
 }
